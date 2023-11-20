@@ -53,7 +53,6 @@ let putUser=async (req,res)=>{
 
 let deleteUser=async (req,res)=>{
   let userId=req.query.id;
-  console.log('userId',userId);
   let alluser = await crudService.deleteUserService(userId);
   return res.render("displayCRUD.ejs", {
     dataTable: alluser,
