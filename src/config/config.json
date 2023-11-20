@@ -4,7 +4,12 @@
     "password": "root",
     "database": "nodejsdb-basic",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "raw":true,
+    "query":{
+      "raw":true
+    },
+    "timezone":"+07:00"
   },
   "test": {
     "username": "root",
